@@ -1,20 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const { readBooks, writeBooks } = require('../utils/bookHandler');
-const { readUsers } = require('../utils/dataHandler'); 
+const { readUsers } = require('../utils/dataHandler');
 
-// 📘 Add a new book
-router.post('/books', (req, res) => {
+// ➕ Add a new book
+router.post('/', (req, res) => {
   const { title, author, genre, location, contact, ownerId } = req.body;
-
-  console.log('📥 Add Book Request:', req.body); // ✅ Added for debugging
 
   if (!title || !author || !location || !contact || !ownerId) {
     return res.status(400).json({ message: 'Required fields missing' });
   }
 
   const users = readUsers();
-  const owner = users.find(u => u.id === Number(ownerId)); // ✅ FIX: Ensure number comparison
+  const owner = users.find(u => u.id === Number(ownerId));
 
   if (!owner || owner.role !== 'Owner') {
     return res.status(403).json({ message: 'Only Book Owners can add listings' });
@@ -39,7 +37,8 @@ router.post('/books', (req, res) => {
   res.status(201).json({ message: 'Book added', book: newBook });
 });
 
-router.get('/books', (req, res) => {
+// 📚 Get books with filters
+router.get('/', (req, res) => {
   const books = readBooks();
   const { genre, location, title } = req.query;
 
@@ -66,7 +65,8 @@ router.get('/books', (req, res) => {
   res.json(filtered);
 });
 
-router.put('/books/:id/status', (req, res) => {
+// 🔄 Update book status
+router.put('/:id/status', (req, res) => {
   const { status } = req.body;
   const validStatuses = ['available', 'rented', 'exchanged'];
   const books = readBooks();
@@ -87,7 +87,8 @@ router.put('/books/:id/status', (req, res) => {
   res.status(200).json({ message: 'Book status updated', book: books[index] });
 });
 
-router.delete('/books/:id', (req, res) => {
+// ❌ Delete a book
+router.delete('/:id', (req, res) => {
   const bookId = parseInt(req.params.id);
   const { ownerId } = req.body;
 
