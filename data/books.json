@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1744371146196,
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "genre": "Programming",
+    "location": "Bangalore",
+    "contact": "haaid@example.com",
+    "ownerId": 1744354368584,
+    "status": "rented",
+    "createdAt": "2025-04-11T11:32:26.196Z"
+  },
+  {
+    "id": 1744389367214,
+    "title": "B99",
+    "author": "Raymond Hold",
+    "genre": "Crime",
+    "location": "New York",
+    "contact": "B99@gmail.com",
+    "ownerId": 1744375960973,
+    "status": "available",
+    "createdAt": "2025-04-11T16:36:07.214Z"
+  },
+  {
+    "id": 1744392208967,
+    "title": "7 Trurhs of LIfe",
+    "author": "George Martin",
+    "genre": "Life",
+    "location": "New York",
+    "contact": "ksr@gmail.com",
+    "ownerId": 1744392068232,
+    "status": "available",
+    "createdAt": "2025-04-11T17:23:28.967Z"
+  },
+  {
+    "id": 1744392683819,
+    "title": "Sad Endings",
+    "author": "Raymond Hold",
+    "genre": "Life",
+    "location": "Bangalore",
+    "contact": "Amy@gmail.com",
+    "ownerId": 1744392068232,
+    "status": "available",
+    "createdAt": "2025-04-11T17:31:23.819Z"
+  },
+  {
+    "id": 1744396206146,
+    "title": "Game of Thrones",
+    "author": "George Martin",
+    "genre": "Dragons",
+    "location": "NY",
+    "contact": "Tyrione@gmail.com",
+    "ownerId": 1744375960973,
+    "status": "available",
+    "createdAt": "2025-04-11T18:30:06.146Z"
+  }
+]

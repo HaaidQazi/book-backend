@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1744354368584,
+    "name": "Haaid7",
+    "email": "haaid@example.com",
+    "password": "1234",
+    "mobile": "88250123456",
+    "role": "Owner"
+  },
+  {
+    "id": 1744358962717,
+    "name": "Harsh",
+    "email": "Harsh@example.com",
+    "password": "1234",
+    "mobile": "9999999999",
+    "role": "Seeker"
+  },
+  {
+    "id": 1744375960973,
+    "name": "jack",
+    "email": "JackPeralta@gmail.com",
+    "password": "23456",
+    "mobile": "78982211",
+    "role": "Owner"
+  },
+  {
+    "id": 1744376192670,
+    "name": "Amy",
+    "email": "Amy@gmail.com",
+    "password": "23456",
+    "mobile": "34342456",
+    "role": "Seeker"
+  },
+  {
+    "id": 1744377686500,
+    "name": "Pedro Duarte",
+    "email": "P@gmail.com",
+    "password": "23456",
+    "mobile": "34342456",
+    "role": "Seeker"
+  },
+  {
+    "id": 1744378344713,
+    "name": "Suinaldo",
+    "email": "suI@gmail.com",
+    "password": "23456",
+    "mobile": "34342456",
+    "role": "Owner"
+  },
+  {
+    "id": 1744392068232,
+    "name": "Karni",
+    "email": "ksr@gmail.com",
+    "password": "23456",
+    "mobile": "78982211",
+    "role": "Owner"
+  },
+  {
+    "id": 1744434824289,
+    "name": "Arya ",
+    "email": "Arya@gmail.com",
+    "password": "23456",
+    "mobile": "78982211",
+    "role": "Owner"
+  }
+]
